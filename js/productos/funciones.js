@@ -28,8 +28,8 @@ const listarDatos = async() => {
             `<td>${producto.descripcion}</td>`+
             `<td>${producto.precio}</td>`+
             `<td>
-            <i onclick="window.location.href='actualizarProductos.html?_id=${producto._id}'" class="fa-solid fa-pen-to-square iconosRojos"></i>
-            <i onclick="eliminar('${producto._id}')" class="fa-solid fa-pen-to-square "></i>
+            <i onclick="window.location.href='actualizarProductos.html?_id=${producto._id}'" class="fa-solid fa-pen-to-square"></i>
+            <i onclick="eliminar('${producto._id}')" class="fa-solid fa-trash iconosRojos"></i>
             </td>`+
             `</tr>`
         })

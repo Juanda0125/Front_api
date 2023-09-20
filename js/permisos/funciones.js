@@ -208,30 +208,7 @@ const actualizar = async()=>{
     let _nombreper = document.getElementById('nnombreper').value
     let _modulo = "ola"
     //
-    let _compras = document.getElementById('compras')
-    let _orden = document.getElementById('orden')
-    let _ventas = document.getElementById('ventas')
-    let _usuarios = document.getElementById('usuarios')
-    //
-    if (_compras.checked)
-       _compras = true
-    else
-       _compras = false
-    //
-    if (_orden.checked)
-       _orden = true
-    else
-       _orden = false
-    //
-    if (_ventas.checked)
-       _ventas = true
-    else
-       _ventas = false
-    //
-    if (_usuarios.checked)
-       _usuarios = true
-    else
-       _usuarios = false        
+      
     // alert(_compras.checked+" -- "+_orden.checked)
 
     // alert(checked(_compras))
@@ -246,10 +223,6 @@ const actualizar = async()=>{
             ID:_ID,
             nombre:_nombreper,
             modulo:_modulo,
-            compras:_compras,
-            orden:_orden,
-            ventas:_ventas,
-            usuarios:_usuarios
         }
 
         console.log(permiso)

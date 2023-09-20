@@ -28,8 +28,8 @@ const listarDatos = async() => {
             `<td>${permiso.nombre}</td>`+
             `<td>${permiso.modulo}</td>`+
             `<td>
-            <i onclick="window.location.href='actualizarPermisos.html?_id=${permiso._id}'" class="fa-solid fa-pen-to-square iconosRojos"></i>
-            <i onclick='eliminar("${permiso._id}")' class="fa-solid fa-pen-to-square "></i>
+            <i onclick="window.location.href='actualizarPermisos.html?_id=${permiso._id}'" class="fa-solid fa-pen-to-square"></i>
+            <i onclick='eliminar("${permiso._id}")' class="fa-solid fa-trash iconosRojos"></i>
             </td>`+
             `</tr>`
         })

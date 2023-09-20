@@ -212,7 +212,7 @@ const actualizar = async()=>{
 
 
 const eliminar = (id) =>{
-    if(confirm(`¿Está seguro de Realizar la Eliminación id = ${id}`) == true){
+    if(confirm(`¿Está seguro de Realizar la Eliminación`) == true){
            let permiso  = {
                 _id: id
            }

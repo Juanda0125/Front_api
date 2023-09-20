@@ -293,7 +293,7 @@ const eliminar = (id) =>{
             .then((resp) => resp.json()) //Obtener la respuesta y convertirla a json
             .then(json => {
                 alert(json.msg)//Mensaje que retorna la API
-                window.location.href = 'gestionPermiso.html'
+                window.location.href = 'gestionPermisos.html'
 
             }) 
     }

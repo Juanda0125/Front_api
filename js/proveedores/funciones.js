@@ -28,8 +28,8 @@ const listarDatos = async() => {
             `<td>${proveedor.direccion}</td>`+
             `<td>${proveedor.telefono}</td>`+
             `<td>
-            <i onclick="window.location.href='actualizarProveedores.html?_id=${proveedor._id}'" class="fa-solid fa-pen-to-square iconosRojos"></i>
-            <i onclick="eliminar('${proveedor._id}')" class="fa-solid fa-pen-to-square "></i>
+            <i onclick="window.location.href='actualizarProveedores.html?_id=${proveedor._id}'" class="fa-solid fa-pen-to-square"></i>
+            <i onclick="eliminar('${proveedor._id}')" class="fa-solid fa-trash iconosRojos"></i>
             </td>`+
             `</tr>`
         })

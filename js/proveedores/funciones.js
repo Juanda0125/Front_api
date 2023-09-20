@@ -229,7 +229,7 @@ const eliminar = (id) =>{
                 alert(json.msg)//Mensaje que retorna la API
             })
 
-            window.location.href = 'gestionPermisos.html'
+            window.location.href = 'gestionProveedores.html'
     }
 }
 

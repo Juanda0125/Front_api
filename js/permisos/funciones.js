@@ -29,7 +29,7 @@ const listarDatos = async() => {
             `<td>${permiso.modulo}</td>`+
             `<td>
             <i onclick="window.location.href='actualizarPermisos.html?_id=${permiso._id}'" class="fa-solid fa-pen-to-square iconosRojos"></i>
-            <i onclick="eliminar('${permiso._id}')" class="fa-solid fa-pen-to-square "></i>
+            <i onclick='eliminar("${permiso._id}")' class="fa-solid fa-pen-to-square "></i>
             </td>`+
             `</tr>`
         })
@@ -279,10 +279,11 @@ const actualizar = async()=>{
 
 
 const eliminar = (id) =>{
-    if(confirm(`¿Está seguro de Realizar la Eliminación id = ${id}`) == true){
-           let permiso  = {
+    if(confirm('¿Está seguro de realizar la eliminación') == true){
+
+           let permiso = {
                 _id: id
-           }
+            }
            fetch(url,  {
                 method: 'DELETE',
                 mode: 'cors',
@@ -292,10 +293,8 @@ const eliminar = (id) =>{
             .then((resp) => resp.json()) //Obtener la respuesta y convertirla a json
             .then(json => {
                 alert(json.msg)//Mensaje que retorna la API
-                window.location.href = 'gestionPermisos.html'
-            })
-        }  
-    
+            }) 
+    }
 }
 
 
